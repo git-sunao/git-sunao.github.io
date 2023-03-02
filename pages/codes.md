@@ -1,7 +1,7 @@
 ---
 layout: archive
-title: Code
-permalink: /code/
+title: Codes
+permalink: /codes/
 author_profile: true
 mathjax: true
 ---

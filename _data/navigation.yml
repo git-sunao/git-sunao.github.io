@@ -2,8 +2,8 @@
 main:
   - title: Projects
     url: /projects/
-  - title: Code
-    url: /code/
+  - title: Codes
+    url: /codes/
   - title: CV
     url: /cv/
   - title: Misc
