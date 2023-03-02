@@ -1,6 +1,6 @@
 # git-sunao.github.io
 
-This is the source code for [cosmo-sunao website](https://github.com/git-sunao/git-sunao.github.io).
+This is the source code for [cosmo-sunao website](https://github.com/git-sunao/git-sunao.github.io) based on [minimal mistakes](https://github.com/mmistakes/minimal-mistakes)
 
 # Usage
 
