@@ -107,7 +107,7 @@ analytics:
 author:
   name: "Sunao Sugiyama"
   avatar: "/assets/images/avatar.jpg"
-  bio: "I am a PhD Student working on cosmology"
+  bio: "Observational cosmologist"
   location: "Kavli IPMU"
   location_url: "https://goo.gl/maps/XPdLkDBtowm2voJX7"
   email: "sunao.sugiyama@ipmu.jp"
@@ -286,3 +286,10 @@ defaults:
       comments: # true
       share: true
       related: true
+
+# output directory
+# If you want to build the homepage for github, do
+#     bundle exec jekyll build
+# If you want to serve the homepage on local
+#     bundle exec jekyll serve
+destination: docs

@@ -1,5 +1,11 @@
 <!-- start custom head snippets -->
 
+{% if site.head_scripts %} {% for script in site.head_scripts %}
+<script src="{{ script | relative_url }}"></script>
+{% endfor %} {% endif %} {% if page.mathjax %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+{% endif %}
+
 <!-- insert favicons. use https://realfavicongenerator.net/ -->
 
 <!-- end custom head snippets -->

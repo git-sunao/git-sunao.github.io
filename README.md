@@ -19,3 +19,7 @@ bundle exec jekyll build
 ```
 
 This generates the webpage under `docs/`. The github will serve the webpage from this directory.
+
+# Related
+
+This repository refers to [cv](https://github.com/git-sunao/cv) repository.

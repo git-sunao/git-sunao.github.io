@@ -21,7 +21,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Cosmo-Sunao">
 <meta property="og:title" content="Projects">
-<meta property="og:url" content="/projects/">
+<meta property="og:url" content="http://localhost:4000/projects/">
 
 
   <meta property="og:description" content="Sunao’s Homepage">
@@ -41,7 +41,7 @@
   
 
 
-<link rel="canonical" href="/projects/">
+<link rel="canonical" href="http://localhost:4000/projects/">
 
 
 
@@ -52,7 +52,7 @@
     
       "@type": "Person",
       "name": "Cosmo Sunao",
-      "url": "/"
+      "url": "http://localhost:4000/"
     
   }
 </script>
@@ -95,11 +95,11 @@
     href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"
 /></noscript>
 
+    <!-- start custom head snippets -->
+
  
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 
-
-    <!-- start custom head snippets -->
 
 <!-- insert favicons. use https://realfavicongenerator.net/ -->
 
@@ -130,9 +130,7 @@
         <ul class="visible-links"><li class="masthead__menu-item">
               <a href="/projects/">Projects</a>
             </li><li class="masthead__menu-item">
-              <a href="/publications/">Publications</a>
-            </li><li class="masthead__menu-item">
-              <a href="/talks/">Talks</a>
+              <a href="/cv/">CV</a>
             </li><li class="masthead__menu-item">
               <a href="/misc/">Misc</a>
             </li></ul>
@@ -163,7 +161,7 @@
 
   
     <div class="author__avatar">
-      <a href="/">
+      <a href="http://localhost:4000/">
         <img src="/assets/images/avatar.jpg" alt="Sunao Sugiyama" itemprop="image" class="u-photo">
       </a>
     </div>
@@ -171,11 +169,11 @@
 
   <div class="author__content">
     <h3 class="author__name p-name" itemprop="name">
-      <a class="u-url" rel="me" href="/" itemprop="url">Sunao Sugiyama</a>
+      <a class="u-url" rel="me" href="http://localhost:4000/" itemprop="url">Sunao Sugiyama</a>
     </h3>
     
       <div class="author__bio p-note" itemprop="description">
-        <p>I am a PhD Student working on cosmology</p>
+        <p>Observational cosmologist</p>
 
       </div>
     
@@ -281,15 +279,25 @@
     
       <h1 id="page-title" class="page__title">Projects</h1>
     
-    <h1 id="hsc-cosmology">HSC cosmology</h1>
+    <p>My latest publication list is available at <a href="https://ui.adsabs.harvard.edu/search/filter_author_facet_hier_fq_author=AND&amp;filter_author_facet_hier_fq_author=author_facet_hier%3A%221%2FSugiyama%2C%20S%2FSugiyama%2C%20Sunao%22&amp;fq=%7B!type%3Daqp%20v%3D%24fq_author%7D&amp;fq_author=(author_facet_hier%3A%221%2FSugiyama%2C%20S%2FSugiyama%2C%20Sunao%22)&amp;q=pubdate%3A%5B2001-01%20TO%209999-12%5D%20author%3A(%22Sugiyama%2CSunao%22)&amp;sort=date%20desc%2C%20bibcode%20desc&amp;p_=0">ADS</a>.</p>
 
-<h2 id="hsc-y3-cosmology-3times2pt">HSC Y3 cosmology: 3\(\times\)2pt</h2>
+<h2 id="subaru-hsc-cosmology">Subaru HSC cosmology</h2>
 
-\[E=mc^2\]
+<h3 id="hsc-y1-cosmology-2times2pt">HSC Y1 cosmology: 2\(\times\)2pt</h3>
 
-<h2 id="hsc-y1-cosmology-2times2pt">HSC Y1 cosmology: 2\(\times\)2pt</h2>
+<p>Using the Subaru HSC Y1 data, we performed so-called 2\(\times\)2pt analysis, i.e. a joint analysis of galaxy-galaxy lensing and galaxy clustering.
+We used the HSC Y1 shape catalog for weak lens galaxy, and SDSS spectroscopic galaxy catalog for lens galaxy.
+Galaxies are the biased tracer of the underlying matter density field, and thus we need to use the galaxy bias model for the robust estimation of cosmological parameters.
+For the HSC Y1 data, we develop two galaxy bias models: the minimal bias model which is inspired by the cosmological perturbation theory and valid on sufficiently large scale, and the halo-based model which can predict the nonlinear physics down to relatively small scales than the minimal bias model.
+In order to validate the use of galaxy models above in the cosmological parameter inference from Subaru HSC 2\(\times\)2pt analysis, we performed the <em>cosmology challenge</em>, where we analyze the mock data and test the model by checking the input cosmological parameters can be recovered by the analysis (see <a href="https://arxiv.org/abs/2008.06873">Sugiyama et al.</a> for minimal bias model validation and <a href="https://arxiv.org/abs/2101.00113">Miyatake et al.</a> for halo-based model validation).
+Based on these studies, we find the scale where these models can be applied to robustly infer the true cosmological parameters.</p>
 
-<h1 id="microlensing-observation-for-pbh-search">Microlensing observation for PBH search</h1>
+<p>We applied these models (minimal bias model and halo-based model) to the HSC Y1 real data in <a href="https://arxiv.org/abs/2111.10966">Sugiyama et al.</a> and <a href="https://arxiv.org/abs/2111.02419">Miyatake et al.</a>.
+To avoid the confirmation bias of the analyst, we performed the blind analysis, where we analyzed three blind catalogs. We also blinded the value of cosmological parameter values in the blind analysis to prevent ourselves to compare the result of HSC to thost from external experiments, e.g. Planck.
+During the blind analysis we performed various kind of systematics tests, and unblinded our result after we confirmed that our analysis are bias free.
+We find \(S_8=0.795^{+0.049}_{−0.042}\), which is consistent with Planck 2018, indicating no \(S_8\) tension.</p>
+
+<h2 id="microlensing-observation-for-pbh-search">Microlensing observation for PBH search</h2>
 
   </div>
 </div>
