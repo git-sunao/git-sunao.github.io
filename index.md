@@ -5,7 +5,7 @@ author_profile: true
 header:
   overlay_image: /assets/images/kanoriver.jpg
   og_image: /assets/images/kanoriver.jpg
-  caption: "Photo of Kano river in Numazu-city"
+  caption: "[Photo of Kano river in Numazu-city](https://goo.gl/maps/V4UHTCuGnZuw9uxo9)"
 ---
 
 # Sunao Sugiyama
@@ -15,4 +15,4 @@ I am supervied by [Masahiro Takada](https://db.ipmu.jp/member/personal/698en.htm
 
 My main interest is in the cosmology using the observation of gravitational lensing. I also have additional interests in the numerical and statistical method enabling more efficient analysis of cosmology.
 
-My cv is available [here](https://github.com/git-sunao/cv/blob/main/cv.pdf).
+My CV is available [here](https://github.com/git-sunao/cv/blob/main/cv.pdf).

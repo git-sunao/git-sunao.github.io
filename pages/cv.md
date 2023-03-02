@@ -3,6 +3,11 @@ layout: archive
 title: CV
 permalink: /cv/
 author_profile: true
+
+header:
+  overlay_image: /assets/images/phill-30th-station.jpg
+  og_image: /assets/images/phill-30th-station.jpg
+  caption: "[The 30th station of Philadelphia](https://goo.gl/maps/KGwgReYz4UwAdYBY6)"
 ---
 
 ### CV
