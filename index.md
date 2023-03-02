@@ -1,6 +1,11 @@
 ---
 layout: home
 author_profile: true
+
+header:
+  overlay_image: /assets/images/kanoriver.jpg
+  og_image: /assets/images/kanoriver.jpg
+  caption: "Photo of Kano river in Numazu-city"
 ---
 
 # Sunao Sugiyama
