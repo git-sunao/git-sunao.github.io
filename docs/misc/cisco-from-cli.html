@@ -9,7 +9,7 @@
   <head>
     <meta charset="utf-8" />
 
-<!-- begin _includes/seo.html --><title>Projects - Cosmo-Sunao</title>
+<!-- begin _includes/seo.html --><title>Cisco from CLI - Cosmo-Sunao</title>
 <meta name="description" content="Sunao’s Homepage">
 
 
@@ -20,16 +20,14 @@
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Cosmo-Sunao">
-<meta property="og:title" content="Projects">
-<meta property="og:url" content="/projects/">
+<meta property="og:title" content="Cisco from CLI">
+<meta property="og:url" content="/misc/cisco-from-cli">
 
 
   <meta property="og:description" content="Sunao’s Homepage">
 
 
 
-  <meta property="og:image" content="/assets/images/rainbow-bridge.jpg">
-
 
 
 
@@ -43,7 +41,7 @@
   
 
 
-<link rel="canonical" href="/projects/">
+<link rel="canonical" href="/misc/cisco-from-cli">
 
 
 
@@ -100,8 +98,6 @@
     <!-- start custom head snippets -->
 
  
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
-
 
 <!-- insert favicons. use https://realfavicongenerator.net/ -->
 
@@ -154,40 +150,6 @@
 
     <div class="initial-content">
       
-  
-
-
-
-
-
-
-
-<div class="page__hero--overlay"
-  style=" background-image: url('/assets/images/rainbow-bridge.jpg');"
->
-  
-    <div class="wrapper">
-      <h1 id="page-title" class="page__title" itemprop="headline">
-        
-          Projects
-
-        
-      </h1>
-      
-      
-
-
-      
-      
-    </div>
-  
-  
-    <span class="page__hero-caption"><a href="https://goo.gl/maps/YZtipFQDmD1PDMpW7">Rainbow Bridge in Tokyo</a>
-</span>
-  
-</div>
-
-
 
 
 
@@ -317,19 +279,65 @@
 
   <div class="archive">
     
-    <p>My latest publication list is available at <a href="https://ui.adsabs.harvard.edu/search/filter_author_facet_hier_fq_author=AND&amp;filter_author_facet_hier_fq_author=author_facet_hier%3A%221%2FSugiyama%2C%20S%2FSugiyama%2C%20Sunao%22&amp;fq=%7B!type%3Daqp%20v%3D%24fq_author%7D&amp;fq_author=(author_facet_hier%3A%221%2FSugiyama%2C%20S%2FSugiyama%2C%20Sunao%22)&amp;q=pubdate%3A%5B2001-01%20TO%209999-12%5D%20author%3A(%22Sugiyama%2CSunao%22)&amp;sort=date%20desc%2C%20bibcode%20desc&amp;p_=0">ADS</a>.</p>
+      <h1 id="page-title" class="page__title">Cisco from CLI</h1>
+    
+    <h3 id="cisco-anyconnect">Cisco AnyConnect</h3>
 
-<h2 id="hsc-cosmology"><a href="/projects/hsc-weaklens">HSC cosmology</a></h2>
+<p>Cisco AnyConnect is a virtual private network (VPN) software that allows users to remotely access a network from anywhere in the world, securely and with ease. It is commonly used in enterprise and corporate settings to provide employees with access to company resources, such as servers, databases, and applications, without compromising security.</p>
 
-<p><img src="/assets/images/hscweaklensy1.jpg" alt="hsc-weaklens" class="width-60" /></p>
+<h3 id="connecting-vpn-from-cli">Connecting VPN from CLI</h3>
 
-<h2 id="microlensing-observation"><a href="/projects/microlensing">Microlensing observation</a></h2>
+<p>Usually, people connect to VPN server with the Desktop Cisco AnyConnect application. Cisco AnyConnect also has command line interface, so we can easily connect to VPN server from command line interface (CLI).</p>
 
-<p><img src="/assets/images/microlensing.jpg" alt="microlensing" class="width-60" /></p>
+<p>Cisco CLI is available at</p>
 
-<h2 id="testing-the-pbh-scenario-with-microlensing"><a href="/projects/pbh">Testing the PBH scenario with microlensing</a></h2>
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">ls /opt/cisco/anyconnect/bin/
+</span></code></pre></div></div>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>![pbh](/assets/images/pbh.jpg){: .width-50}
+<p>To connect the VPN server “XXX”, do as</p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">/opt/cisco/anyconnect/bin/vpn -s connect XXX
+</span></code></pre></div></div>
+
+<p>Then, you can connect to the server XXX after giving your username and password.</p>
+
+<h3 id="automating-cisco-anyconnect-from-cli">Automating Cisco AnyConnect from CLI</h3>
+
+<p>This step can be automated using with an executable script (name this file as <code class="language-plaintext highlighter-rouge">cisco2xxx</code>)</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#!/usr/bin/expect</span>
+<span class="c"># Conenct to VPN server with vpn by Cisco</span>
+<span class="c"># Here we assume server name "XXX",  your username "yourusername", and your password "yourpassword"</span>
+
+spawn /opt/cisco/anyconnect/bin/vpn <span class="nt">-s</span> connect XXX
+
+expect <span class="s2">"Group: </span><span class="se">\\\[</span><span class="s2">Remote_User</span><span class="se">\\\]</span><span class="s2">"</span> <span class="o">{</span>send <span class="s2">"</span><span class="se">\r</span><span class="s2">"</span> <span class="o">}</span>
+expect <span class="s2">"Username: "</span> <span class="o">{</span> send <span class="s2">"yourusename</span><span class="se">\r</span><span class="s2">"</span> <span class="o">}</span>
+expect <span class="s2">"Password: "</span> <span class="o">{</span> send <span class="s2">"yourpassword</span><span class="se">\r</span><span class="s2">"</span> <span class="o">}</span>
+expect <span class="s2">"accept? </span><span class="se">\\\[</span><span class="s2">y/n</span><span class="se">\\\]</span><span class="s2">:"</span> <span class="o">{</span> send <span class="s2">"y</span><span class="se">\r</span><span class="s2">"</span> <span class="o">}</span>
+
+<span class="nb">set timeout </span>60
+expect <span class="s2">"VPN&gt;"</span>
+</code></pre></div></div>
+
+<p>Put this script to the directory where the PATH is setted, then you can connect to the server XXX by executing</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cisco2xxx
+</code></pre></div></div>
+
+<h3 id="disconnecting-cisco-anyconnect">Disconnecting Cisco AnyConnect</h3>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">vpn -s disconnect
+</span></code></pre></div></div>
+
+<h3 id="checking-the-status-of-vpn-connection">Checking the status of VPN connection</h3>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">vpn -s stats
+</span></code></pre></div></div>
+
+<p>If you just want to see whether the VPN is connected or not, do as</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>vpn -s state | grep "notice: Connected"
 </code></pre></div></div>
 
   </div>

@@ -4,6 +4,11 @@ title: Codes
 permalink: /codes/
 author_profile: true
 mathjax: true
+
+header:
+  overlay_image: /assets/images/camp-dinner.jpg
+  og_image: /assets/images/camp-dinner.jpg
+  caption: "Dinner in camp during cycling tour."
 ---
 
 ### [fft-extended-source](https://github.com/git-sunao/fft-extended-source)

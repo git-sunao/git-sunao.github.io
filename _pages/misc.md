@@ -10,4 +10,13 @@ header:
   caption: "[Fujiwara Hall in Kavli IPMU Building](https://goo.gl/maps/83SNZDF3H1w8qQZd7)"
 ---
 
-To be updated.
+## Visa for US life
+
+I am now experiencing...
+
+## Basics of computation
+
+- [git](/misc/git)
+- [dotfile](/misc/dotfile)
+- [jupyter on remote system](/misc/jupyter-on-remote-system)
+- [Cisco from CLI](cisco-from-cli)
