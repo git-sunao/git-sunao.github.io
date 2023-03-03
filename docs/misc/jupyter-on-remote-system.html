@@ -302,20 +302,21 @@ You can login the server by</p>
 
 <h3 id="setting-on-the-remote-server">Setting on the remote server</h3>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>c = get_config()
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">c</span> <span class="o">=</span> <span class="nf">get_config</span><span class="p">()</span>
 
-c.IPKernelApp.pylab = 'inline'
-c.ServerApp.ip                  = 'localhost'
-c.ServerApp.port                = 9999
-c.ServerApp.allow_remote_access = True
-c.ServerApp.password            = 'HASHED_PASSWORD'
-c.ServerApp.open_browser        = False
+<span class="n">c</span><span class="p">.</span><span class="n">IPKernelApp</span><span class="p">.</span><span class="n">pylab</span> <span class="o">=</span> <span class="s">'inline'</span>
+<span class="n">c</span><span class="p">.</span><span class="n">ServerApp</span><span class="p">.</span><span class="n">ip</span>                  <span class="o">=</span> <span class="s">'localhost'</span>
+<span class="n">c</span><span class="p">.</span><span class="n">ServerApp</span><span class="p">.</span><span class="n">port</span>                <span class="o">=</span> <span class="mi">9999</span>
+<span class="n">c</span><span class="p">.</span><span class="n">ServerApp</span><span class="p">.</span><span class="n">allow_remote_access</span> <span class="o">=</span> <span class="bp">True</span>
+<span class="n">c</span><span class="p">.</span><span class="n">ServerApp</span><span class="p">.</span><span class="n">password</span>            <span class="o">=</span> <span class="s">'HASHED_PASSWORD'</span>
+<span class="n">c</span><span class="p">.</span><span class="n">ServerApp</span><span class="p">.</span><span class="n">open_browser</span>        <span class="o">=</span> <span class="bp">False</span>
 </code></pre></div></div>
 
 <p>Here, you need to specify your hased password of jupyter.
 You can obtain the hased password by running,</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python -c 'from notebook.auth import passwd;print(passwd())'
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="n">notebook.auth</span> <span class="kn">import</span> <span class="n">passwd</span>
+<span class="nf">print</span><span class="p">(</span><span class="nf">passwd</span><span class="p">())</span>
 </code></pre></div></div>
 
 <p>and entering your jupyter password.</p>

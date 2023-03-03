@@ -28,7 +28,7 @@ ssh YOUR_SERVER_NAME
 
 ### Setting on the remote server
 
-```
+```python
 c = get_config()
 
 c.IPKernelApp.pylab = 'inline'
@@ -42,8 +42,9 @@ c.ServerApp.open_browser        = False
 Here, you need to specify your hased password of jupyter.
 You can obtain the hased password by running,
 
-```
-python -c 'from notebook.auth import passwd;print(passwd())'
+```python
+from notebook.auth import passwd
+print(passwd())
 ```
 
 and entering your jupyter password.
