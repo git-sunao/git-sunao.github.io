@@ -21,8 +21,6 @@ My latest publication list is available at [ADS](<https://ui.adsabs.harvard.edu/
 
 ![microlensing](/assets/images/microlensing.jpg){: .width-60}
 
-## [Testing the PBH scenario with microlensing](/projects/pbh)
+## [Testing the PBH scenarios with microlensing](/projects/pbh)
 
-```
-![pbh](/assets/images/pbh.jpg){: .width-50}
-```
+![pbh](/assets/images/pbh-theory-vacuum.jpg){: .width-60}
