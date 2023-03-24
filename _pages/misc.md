@@ -10,11 +10,13 @@ header:
   caption: "[Fujiwara Hall in Kavli IPMU Building](https://goo.gl/maps/83SNZDF3H1w8qQZd7)"
 ---
 
-## Visa for US life
+## Tips
+
+### Visa for US life
 
 I am now experiencing...
 
-## Basics of computation
+### Basics of computation
 
 - [git](/misc/git)
 - [dotfile](/misc/dotfile)

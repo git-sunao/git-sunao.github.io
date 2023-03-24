@@ -18,7 +18,7 @@ This method reduces the two-dimensional integration to one-dimensional fft on lo
 The target quantity to be evaluated is
 
 $$
-\tilde{A}_{\rm ext}(u; \rho) = \int{\rm d}\vec{x} A_{\rm p}(\vec{x})s(\vec{x}+\vec{u};\rho).
+A_{\rm ext}(u; \rho) = \int{\rm d}\vec{x} A_{\rm p}(\vec{x})s(\vec{x}+\vec{u};\rho).
 $$
 
 where $$s(u;\rho)$$ is the source flux profile as a function of distance from source center, $$u$$.
