@@ -6,7 +6,24 @@ mathjax: true
 author_profile: true
 ---
 
-![hsc-weaklens](/assets/images/hscweaklensy1.jpg)
+## HSC Weak Lensing Cosmology with HSC-Y3 data
+![hsc-weaklens-y3](/assets/images/hscweaklensy3all.png)
+
+In the [HSC-Y3 website](https://hsc-release.mtk.nao.ac.jp/doc/index.php/wly3/), we present a set of 8 papers. Among them, I led the following three papers about HSC-Y3 3$$\times$$2pt analysis as a project of my PhD thesis.
+- Hyper Suprime-Cam Year 3 Results: Cosmology from Galaxy Clustering and Weak Lensing with HSC and SDSS using the Emulator Based Halo Model [(arxiv)](https://arxiv.org/abs/2304.00704)
+- Hyper Suprime-Cam Year 3 Results: Cosmology from Galaxy Clustering and Weak Lensing with HSC and SDSS using the Minimal Bias Model [(arxiv)](https://arxiv.org/abs/2304.00705)
+- Hyper Suprime-Cam Year 3 Results: Measurements of Clustering of SDSS-BOSS Galaxies, Galaxy-Galaxy Lensing and Cosmic Shear [(arxiv)](https://arxiv.org/abs/2304.00703)
+
+We presented our HSC-Y3 results on a webinar on Apr 3 2023(EST). The video will be available on the [HSC-Y3 website](https://hsc-release.mtk.nao.ac.jp/doc/index.php/wly3/)
+
+Please also take a look at the following press-release
+- [Press release fro Kavli IPMU](https://www.ipmu.jp/en/20230404-darkmatter)
+- [Press release from KMI](https://www.nagoya-u.ac.jp/researchinfo/result/2023/04/---hsc.html)
+- [Press release from Princeton](https://www.princeton.edu/news/2023/04/03/how-see-invisible-using-dark-matter-distribution-test-our-cosmological-model)
+- [Press release from IUCAA](https://web.iucaa.in/news/GLIDM/)
+
+## HSC Weak Lensing Cosmology with HSC-Y1 data 
+![hsc-weaklens-y1](/assets/images/hscweaklensy1.jpg)
 
 Using the Subaru HSC Y1 data, we performed so-called 2$$\times$$2pt analysis, i.e. a joint analysis of galaxy-galaxy lensing and galaxy clustering.
 We used the HSC Y1 shape catalog for weak lens galaxy, and SDSS spectroscopic galaxy catalog for lens galaxy.

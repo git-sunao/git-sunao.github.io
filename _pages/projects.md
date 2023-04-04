@@ -15,7 +15,7 @@ My latest publication list is available at [ADS](<https://ui.adsabs.harvard.edu/
 
 ## [HSC cosmology](/projects/hsc-weaklens)
 
-![hsc-weaklens](/assets/images/hscweaklensy1.jpg){: .width-60}
+![hsc-weaklens](/assets/images/hscweaklensy3all.png){: .width-60}
 
 ## [Microlensing observation](/projects/microlensing)
 
