@@ -19,6 +19,7 @@ We presented our HSC-Y3 results on a webinar on Apr 3 2023(EST). The video will 
 Please also take a look at the following press-release
 - [Press release fro Kavli IPMU](https://www.ipmu.jp/en/20230404-darkmatter)
 - [Press release from KMI](https://www.nagoya-u.ac.jp/researchinfo/result/2023/04/---hsc.html)
+- [Press release from CMU](https://www.cmu.edu/physics/news-events/2023/0403_hsc-dark-matter.html)
 - [Press release from Princeton](https://www.princeton.edu/news/2023/04/03/how-see-invisible-using-dark-matter-distribution-test-our-cosmological-model)
 - [Press release from IUCAA](https://web.iucaa.in/news/GLIDM/)
 
