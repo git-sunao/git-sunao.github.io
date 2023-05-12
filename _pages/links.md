@@ -19,6 +19,7 @@ Below is the links I am belonging to.
 - [CD3](https://cd3.ipmu.jp/projects/)
 - [Astronomical society of Japan (AJS)](https://www.asj.or.jp/en/)
 - [Japanese physical society (JPS)](https://www.jps.or.jp/)
+- [Beyond AI](https://beyondai.jp/)
 
 (past)
 - [IGPEES](https://www.s.u-tokyo.ac.jp/en/IGPEES/)
