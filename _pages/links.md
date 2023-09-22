@@ -11,7 +11,7 @@ header:
   caption: "[Rainbow Bridge in Tokyo](https://goo.gl/maps/YZtipFQDmD1PDMpW7)"
 ---
 
-Below is the links I am belonging to.
+Below is the links of community that I am belonging to.
 - [UPenn, Department of Physics and Astronomy](https://live-sas-physics.pantheon.sas.upenn.edu/)
 - [HSC weak lensing working group](https://hsc.mtk.nao.ac.jp/ssp/science/weak-lensing-cosmology/)
 - [PFS](https://pfs.ipmu.jp/index.html)
