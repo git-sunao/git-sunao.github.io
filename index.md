@@ -10,10 +10,10 @@ header:
 
 # Sunao Sugiyama
 
-I am a PostDoctral Researcher at Kavli IPMU from Apr 1 2023.
-Previously I was a graduate student at [Kavli IPMU](https://www.ipmu.jp/en) and University of Tokyo, Japan.
-I was supervied by [Masahiro Takada](https://db.ipmu.jp/member/personal/698en.html). 
-I completed the Bachelor's and Master's degree in University of Tokyo.
+I am a PostDoctral Researcher at University of Pennsylvania from Sep 1 2023. 
+I got PhD from University of Tokyo, Japan, and worked at [Kavli IPMU](https://www.ipmu.jp/en) 
+supervied by [Masahiro Takada](https://db.ipmu.jp/member/personal/698en.html). 
+I completed the Bachelor's and Master's degree in University of Tokyo as well.
 
 My main interest is in the cosmology using the observation of gravitational lensing. 
 I also have additional interests in the numerical and statistical method enabling more efficient analysis of cosmology.
