@@ -10,7 +10,7 @@ header:
 
 # Sunao Sugiyama
 
-I am a PostDoctral Researcher at University of Pennsylvania from Sep 1 2023. 
+I am a PostDoctral Researcher at University of Pennsylvania from Sep 1 2023, working on weak lensing mainly with [Bhuvnesh Jain](https://live-sas-physics.pantheon.sas.upenn.edu/people/standing-faculty/bhuvnesh-jain).
 I got PhD from University of Tokyo, Japan, and worked at [Kavli IPMU](https://www.ipmu.jp/en) 
 supervied by [Masahiro Takada](https://db.ipmu.jp/member/personal/698en.html). 
 I completed the Bachelor's and Master's degree in University of Tokyo as well.
