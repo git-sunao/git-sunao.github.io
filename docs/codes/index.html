@@ -319,9 +319,9 @@
 
   <div class="archive">
     
-    <h3 id="fft-extended-source"><a href="https://github.com/git-sunao/fft-extended-source">fft-extended-source</a></h3>
+    <h3 id="fastlens"><a href="https://github.com/git-sunao/fft-extended-source">fastlens</a></h3>
 
-<p>FFT based evaluation of finite source effect on microlensing. See and cite <a href="https://arxiv.org/abs/2203.06637">Sugiyama</a>.
+<p><code class="language-plaintext highlighter-rouge">fastlens</code> is an FFT based evaluation of finite source effect on microlensing. See and cite <a href="https://arxiv.org/abs/2203.06637">Sugiyama</a>.
 This method reduces the two-dimensional integration to one-dimensional fft on logarithmic space, which can be efficiently evaluated.
 The target quantity to be evaluated is</p>
 
@@ -329,12 +329,25 @@ The target quantity to be evaluated is</p>
 
 <p>where \(s(u;\rho)\) is the source flux profile as a function of distance from source center, \(u\).</p>
 
+<p><code class="language-plaintext highlighter-rouge">fastlens</code> is installable from both pip and conda:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip install fastlens
+</code></pre></div></div>
+<p>or</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>conda install -c ssunao fastlens
+</code></pre></div></div>
+
 <h3 id="dark_emulator_public"><a href="https://github.com/DarkQuestCosmology/dark_emulator_public">dark_emulator_public</a></h3>
 
 <p>Dark Emulator is an emulator of cosmological dark matter halo statistics.
 Dark Emulator is a part of the <a href="https://darkquestcosmology.github.io/">dark quest project</a>.
 This is based on <a href="https://arxiv.org/abs/1811.09504">Nishimichi et al</a>.
-This package includes the linear power spectrum (of CAMB) emulator in itself.</p>
+This package includes the linear power spectrum (of CAMB) emulator in itself.
+Dark Emulator is installable from both pip and conda:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip install pip install dark_emulator
+</code></pre></div></div>
+<p>or</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>conda install -c nishimichi dark_emulator
+</code></pre></div></div>
 
   </div>
 </div>
