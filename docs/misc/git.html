@@ -289,11 +289,110 @@
 
 <p>For people who will work in a large collaboration, it is strongly recommended to work with git.</p>
 
-<h3 id="git-config">git config</h3>
+<h2 id="basic-git-commands">Basic git commands</h2>
+<p>Listing the files that have changed compared to the last commit.</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git status
+</code></pre></div></div>
+<p>Showing the actual difference compared to the last commit.</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git diff
+</code></pre></div></div>
+<p>Showing the difference in a specific file.</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git diff &lt;file&gt;
+</code></pre></div></div>
+<p>Listing branches of the git repository</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># This shows local branches only</span>
+git branch
+<span class="c"># This shows remote branches as well</span>
+git branch <span class="nt">-a</span>
+</code></pre></div></div>
+<p>Creating a new branch</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git checkout <span class="nt">-b</span> &lt;new branch name&gt;
+</code></pre></div></div>
+<p>Switching to another existing branch</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git checkout &lt;branch&gt;
+</code></pre></div></div>
+<p>Showing the commit history of the git repo.</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git log
+<span class="c"># showing with graph (shows how branches are merged visually etc)</span>
+git log <span class="nt">--graph</span>
+</code></pre></div></div>
+<p>Getting back to a specific commit in the past</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git checkout &lt;commit <span class="nb">hash</span><span class="o">&gt;</span>
+<span class="c"># getting old commit as a new branch</span>
+git checkout <span class="nt">-b</span> &lt;branch name&gt; &lt;commit <span class="nb">hash</span><span class="o">&gt;</span>
+</code></pre></div></div>
+<p>where <code class="language-plaintext highlighter-rouge">&lt;commit hash&gt;</code> is a hash to specify a commit that can be listed with <code class="language-plaintext highlighter-rouge">git log</code>.</p>
+
+<h2 id="updating-the-local-git-repository">Updating the local git repository</h2>
+<p>The process of updating the git repository works in two steps. We first put the file changes onto the stage where the changes that we want to apply to the git repository are prepared, and this operation is called <em>add</em>. The second step is to save the changes on the stage to the actual git repository, this is called <em>commit</em>. 
+The typical workflow would be</p>
+<ol>
+  <li>check which files are changed with <code class="language-plaintext highlighter-rouge">git status</code></li>
+  <li><em>add</em> the files you want to save to the git repository.</li>
+  <li>once you finalized the files to <em>add</em>, you can <em>commit</em> the changes to the local git repository.
+The command to <em>add</em> the files are
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># add one specific file</span>
+git add &lt;file&gt;
+<span class="c"># add files that are tracked by git and that have changed compared to the last commit (this is most useful for daily development)</span>
+git add <span class="nt">-u</span>
+</code></pre></div>    </div>
+    <p>The command to <em>commit</em> the changes on the stage to repo.</p>
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git commit <span class="nt">-m</span><span class="s1">'your commit comment'</span>
+</code></pre></div>    </div>
+    <p>You can get a file back to what was when the last commit. Note that this can be used only before you commit apparently.</p>
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git checkout &lt;filename&gt;
+</code></pre></div>    </div>
+    <p>Note that the above commands work for the branch you are currently working on. So, if you want to change the branch you want to commit, you first need to change the branch with <code class="language-plaintext highlighter-rouge">git checkout &lt;branch&gt;</code> and then use the above commands.</p>
+  </li>
+</ol>
+
+<p>The actual git repository can be found in a hidden directory named <code class="language-plaintext highlighter-rouge">.git</code>. You can see the content with the following command, but it is <strong>strongly advised not to modify</strong> any content in it by hand.</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">ls</span> .git
+</code></pre></div></div>
+
+<h2 id="synchronizing-with-remote-repo">Synchronizing with remote repo</h2>
+<p>The commands in the last section are for updating the local git repository. You still need to upload the change of the local to the remote synchronized repository on e.g. GitHub.
+You can upload your changes of the local git repository to the remote repository (this is called <code class="language-plaintext highlighter-rouge">push</code> in git terminology).</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git push origin &lt;branch name&gt;
+</code></pre></div></div>
+<p>The command to newly get a remote branch.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git checkout -b &lt;branch&gt; origin/&lt;branch&gt;
+</code></pre></div></div>
+<p>Inversely, the command to push a new local branch to the remote branch.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git push -u origin &lt;branch&gt;
+</code></pre></div></div>
+<p>Deleting a local branch that is no longer needed.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git branch -d &lt;branch&gt;
+</code></pre></div></div>
+
+<h2 id="gitignore">gitignore</h2>
+<p>In a git-managed directory, git will look at the difference of all the files under the directory. However, it is usual that some data should be tracked by git but others should not. For example, a file that is specific to one’s local environment, a big data file, <code class="language-plaintext highlighter-rouge">.DS_Store</code> automatically generated by MacOS,  <code class="language-plaintext highlighter-rouge">__pycache__</code>, and so on. These files should be ignored, otherwise, the <code class="language-plaintext highlighter-rouge">git status</code> command shows a huge list of files that should not be tracked by git and makes it harder for you to find which files are changed.
+This can be solved by setting up a so-called <code class="language-plaintext highlighter-rouge">.gitignore</code> file, which lists which files/directories and which type of files/directories should be ignored by git.
+If your repository includes python codes, then you can for example use this <code class="language-plaintext highlighter-rouge">.gitignore</code> file: <a href="https://github.com/github/gitignore/blob/main/Python.gitignore">gitignore template for python form GitHub</a>.
+You can also set up a global gitignore file, which is applied over your computer system.</p>
+
+<h2 id="git-config">git config</h2>
 
 <p>Setting configuration in Git is important because it helps to personalize and optimize the behavior of Git for each user’s specific needs. This includes setting the user’s name and email for authoring commits, configuring the default text editor for commit messages, specifying aliases for frequently used commands, and more.</p>
 
 <p>By setting configuration options, developers can streamline their workflow, reduce errors, and ensure that their commits are attributed correctly. It also helps to ensure consistency across different machines and environments, which is especially important when working collaboratively on a codebase.</p>
+
+<h2 id="starting-a-new-repo-with-github">Starting a new repo with GitHub</h2>
+<p>Human easily forgets things that do not happen daily basis… Here is an instruction copied from GitHub when we initialize a remote repo.
+…or create a new repository on the command line</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">echo</span> <span class="s2">"# analysis"</span> <span class="o">&gt;&gt;</span> README.md
+git init
+git add README.md
+git commit <span class="nt">-m</span> <span class="s2">"first commit"</span>
+git branch <span class="nt">-M</span> main
+git remote add origin https://github.com/HSCM31microlensing/analysis.git
+git push <span class="nt">-u</span> origin main
+</code></pre></div></div>
+<p>…or push an existing repository from the command line</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git remote add origin https://github.com/HSCM31microlensing/analysis.git
+git branch <span class="nt">-M</span> main
+git push <span class="nt">-u</span> origin main
+</code></pre></div></div>
 
   </div>
 </div>
@@ -326,7 +425,7 @@
   </ul>
 </div>
 
-<div class="page__footer-copyright">&copy; 2023 Cosmo Sunao. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+<div class="page__footer-copyright">&copy; 2024 Cosmo Sunao. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
 
       </footer>
     </div>
