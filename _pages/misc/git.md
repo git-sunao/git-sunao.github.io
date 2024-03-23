@@ -71,7 +71,7 @@ The command to *commit* the changes on the stage to repo.
 ```bash
 git commit -m'your commit comment'
 ```
-You can get a file back to what was when the last commit. Note that this can be used only before you commit apparently.
+You can get a file back to what used to be at the time of the last commit. Note that this can be used only before you commit.
 ```bash
 git checkout <filename>
 ```
