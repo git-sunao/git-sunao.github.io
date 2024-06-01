@@ -12,7 +12,7 @@ header:
 
 ### CV
 
-My cv is available in [English](https://github.com/git-sunao/cv/blob/main/en/cv.pdf) and [Japanese](https://github.com/git-sunao/cv/blob/main/jp/cv.pdf).
+My cv is available in [English](https://github.com/git-sunao/cv/blob/main/en/sunao_type_base.pdf) and [Japanese](https://github.com/git-sunao/cv/blob/main/ja/sunao_type_base.pdf).
 
 ### Publication list
 
