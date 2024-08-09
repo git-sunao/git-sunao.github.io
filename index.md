@@ -18,4 +18,4 @@ I completed the Bachelor's and Master's degree in University of Tokyo as well.
 My main interest is in the cosmology using the observation of gravitational lensing. 
 I also have additional interests in the numerical and statistical method enabling more efficient analysis of cosmology.
 
-My CV is available [here](https://github.com/git-sunao/cv/blob/main/cv.pdf).
+My CV is available in [English](https://github.com/git-sunao/cv/blob/main/en/sunao_type_base.pdf) and [Japanese](https://github.com/git-sunao/cv/blob/main/ja/sunao_type_base.pdf)

@@ -17,10 +17,7 @@ My latest publication list is available at [ADS](<https://ui.adsabs.harvard.edu/
 
 ![hsc-weaklens](/assets/images/hscweaklensy3all.png){: .width-60}
 
-## [Microlensing observation](/projects/microlensing)
+## [Microlensing](/projects/microlensing)
 
 ![microlensing](/assets/images/microlensing.jpg){: .width-60}
 
-## [Testing the PBH scenarios with microlensing](/projects/pbh)
-
-![pbh](/assets/images/pbh-theory-vacuum.jpg){: .width-60}
