@@ -1,0 +1,9 @@
+.DS_Store
+.ruby-version
+CHANGELOG.md
+Gemfile
+Gemfile.lock
+Rakefile
+banner.js
+staticman.yml
+test/
