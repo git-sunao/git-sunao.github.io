@@ -319,7 +319,11 @@
 
   <div class="archive">
     
-    <h3 id="fastlens"><a href="https://github.com/git-sunao/fft-extended-source">fastlens</a></h3>
+    <h3 id="fastnc"><a href="https://github.com/git-sunao/fastnc">fastnc</a></h3>
+
+<p><code class="language-plaintext highlighter-rouge">fastnc</code> is a software that compute the cosmic shear three-point correlation function (3PCF). To compute 3PCF from the underlying matter bispectrum, we need to perform a multidimensional Fourier transformation, which is difficult especially because cosmic shear 3PCF include the phase factor that makes integrand oscilates a lot. In <a href="https://arxiv.org/abs/2407.01798">Sugiyama+2024</a>, we developed a novel algorithm that compute the shear 3PCF from bispectrum, using the multipole decomposition of the 3PCF and bispectrum into multipoles. The multipoles in real and Fourier space are related to each other through a 2D Hankel transform, which can be performed quite efficiently using 2D FFTLog. This software implement this idea, and enabled the cosmology inference through a joint analysis of 2+3PCF. See <a href="https://arxiv.org/abs/2508.14018">Sugiyama+2025</a> and <a href="https://arxiv.org/abs/2508.14019">Gomes, Sugiyama+2025</a> for DES and HSC application respectively.</p>
+
+<h3 id="fastlens"><a href="https://github.com/git-sunao/fft-extended-source">fastlens</a></h3>
 
 <p><code class="language-plaintext highlighter-rouge">fastlens</code> is an FFT based evaluation of finite source effect on microlensing. See and cite <a href="https://arxiv.org/abs/2203.06637">Sugiyama</a>.
 This method reduces the two-dimensional integration to one-dimensional fft on logarithmic space, which can be efficiently evaluated.
@@ -380,7 +384,7 @@ Dark Emulator is installable from both pip and conda:</p>
   </ul>
 </div>
 
-<div class="page__footer-copyright">&copy; 2024 Cosmo Sunao. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+<div class="page__footer-copyright">&copy; 2025 Cosmo Sunao. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
 
       </footer>
     </div>
