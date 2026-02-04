@@ -12,13 +12,15 @@ header:
 
 ## Tips
 
-### Visa for US life
-
-I am now experiencing...
-
 ### Basics of computation
 
 - [git](/misc/git)
 - [dotfile](/misc/dotfile)
 - [jupyter on remote system](/misc/jupyter-on-remote-system)
 - [Cisco from CLI](cisco-from-cli)
+
+
+### Recommendations
+These are the mixture of recommendations of mine/others
+- https://www2.yukawa.kyoto-u.ac.jp/~masaru.shibata/words.html
+- https://www.asj.or.jp/jp/activities/geppou/item/118-11_666.pdf
