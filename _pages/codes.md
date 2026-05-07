@@ -37,6 +37,12 @@ or
 conda install -c ssunao fastlens
 ```
 
+
+### [Interactive 3PCF Visualizer](https://git-sunao.github.io/interactive3pcf/)
+For intuitive understanding, I build a visializer of the 3PCF around a given halo profile.
+The code is developped by ChatGPT.
+
+
 ### [dark_emulator_public](https://github.com/DarkQuestCosmology/dark_emulator_public)
 
 Dark Emulator is an emulator of cosmological dark matter halo statistics.
