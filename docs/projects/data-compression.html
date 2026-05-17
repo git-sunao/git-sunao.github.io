@@ -107,7 +107,7 @@
 
   </head>
 
-  <body class="layout--archive">
+  <body class="layout--archive justify-text">
     <nav class="skip-links">
   <ul>
     <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
@@ -208,6 +208,10 @@
             <li><a href="https://orcid.org/0000-0003-1153-6735" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-orcid" aria-hidden="true"></i><span class="label">ORCID</span></a></li>
           
         
+          
+            <li><a href="https://researchmap.jp/sunaosugiyama" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fas fa-link" aria-hidden="true"></i><span class="label">ResearchMap</span></a></li>
+          
+        
       
 
       
@@ -285,14 +289,15 @@
     
       <h1 id="page-title" class="page__title">Data Compression</h1>
     
-    <h2 id="data-compression">Data Compression</h2>
-<p><img src="/assets/images/concept_powered_moped.png" alt="pmoped" class="width-90" /></p>
+    <h2 id="papers">Papers</h2>
+<h1 id="p-moped-data-compression-under-noisy-covariance">p-MOPED data compression under noisy covariance</h1>
+<p><img src="/assets/images/concept_powered_moped.png" alt="pmoped" />
+In <a href="https://arxiv.org/abs/2508.14021">Sugiyama and Park 2025</a>, we developed powered MOPED, or \(p\)-MOPED, a data-compression method designed for parameter inference when the covariance matrix is estimated from a limited number of simulations. Standard MOPED preserves Fisher information in idealized settings, but it can still propagate noise from a noisy sample covariance into parameter constraints. The \(p\)-MOPED method suppresses this covariance-noise propagation by applying a tunable power-law transformation to the sample correlation matrix, balancing information retention against noise reduction. We tested the method on toy models and on Subaru Hyper Suprime-Cam Year 3 weak-lensing data, showing that \(p\)-MOPED gives more robust compressed likelihood analyses, especially when the number of simulations is limited.</p>
 
-<h3 id="papers">Papers</h3>
+<h2 id="codes">Codes</h2>
 <ul>
-  <li><a href="https://arxiv.org/abs/2508.14021">Sugiyama and Park 2025</a> p-MOPED</li>
+  <li><a href="/codes/pmoped">p-MOPED</a></li>
 </ul>
-
 
   </div>
 </div>

@@ -1,0 +1,20 @@
+.justify-text .archive {
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+}
+
+.updates-box {
+  max-height: 11em;
+  overflow-y: auto;
+  font-size: 0.9em;
+  line-height: 1.45;
+}
+
+.updates-box ul {
+  margin-bottom: 0;
+}
+
+.updates-box li {
+  margin-bottom: 0.35em;
+}

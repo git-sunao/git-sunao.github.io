@@ -1,0 +1,30 @@
+- name: fastnc
+  website_name: fastnc
+  website_url: https://github.com/git-sunao/fastnc
+  internal_name: fastnc
+  internal_url: /codes/fastnc
+  description: Compute cosmic shear 3PCF quickly
+- name: fastlens
+  website_name: fastlens
+  website_url: https://github.com/git-sunao/fft-extended-source
+  internal_name: fastlens
+  internal_url: /codes/fastlens
+  description: Compute finite source effect on microlensing
+- name: dark-emulator
+  website_name: dark_emulator_public
+  website_url: https://github.com/DarkQuestCosmology/dark_emulator_public
+  internal_name: dark-emulator
+  internal_url: /codes/dark-emulator
+  description: Emulator of cosmological dark matter halo statistics
+- name: Interactive 3PCF visualizer
+  website_name: Interactive 3PCF Visualizer
+  website_url: https://git-sunao.github.io/interactive3pcf/
+  internal_name: Interactive 3PCF Visualizer
+  internal_url: /codes/interactive3pcf
+  description: An interactive webpage to play with 3PCF
+- name: p-MOPED
+  website_name: p-MOPED
+  website_url: https://github.com/git-sunao/moped
+  internal_name: p-MOPED
+  internal_url: /codes/pmoped
+  description: Data compression for cosmological inference

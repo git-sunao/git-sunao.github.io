@@ -3,6 +3,7 @@ layout: archive
 title: CV
 permalink: /cv/
 author_profile: true
+classes: justify-text
 
 header:
   overlay_image: /assets/images/phill-30th-station.jpg

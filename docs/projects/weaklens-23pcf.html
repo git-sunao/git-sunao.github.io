@@ -9,7 +9,7 @@
   <head>
     <meta charset="utf-8" />
 
-<!-- begin _includes/seo.html --><title>HSC cosmology - Cosmo-Sunao</title>
+<!-- begin _includes/seo.html --><title>3PCF cosmology - Cosmo-Sunao</title>
 <meta name="description" content="Sunao’s Homepage">
 
 
@@ -20,7 +20,7 @@
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Cosmo-Sunao">
-<meta property="og:title" content="HSC cosmology">
+<meta property="og:title" content="3PCF cosmology">
 <meta property="og:url" content="http://localhost:4000/projects/weaklens-23pcf">
 
 
@@ -107,7 +107,7 @@
 
   </head>
 
-  <body class="layout--archive">
+  <body class="layout--archive justify-text">
     <nav class="skip-links">
   <ul>
     <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
@@ -208,6 +208,10 @@
             <li><a href="https://orcid.org/0000-0003-1153-6735" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-orcid" aria-hidden="true"></i><span class="label">ORCID</span></a></li>
           
         
+          
+            <li><a href="https://researchmap.jp/sunaosugiyama" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fas fa-link" aria-hidden="true"></i><span class="label">ResearchMap</span></a></li>
+          
+        
       
 
       
@@ -283,17 +287,34 @@
 
   <div class="archive">
     
-      <h1 id="page-title" class="page__title">HSC cosmology</h1>
+      <h1 id="page-title" class="page__title">3PCF cosmology</h1>
     
-    <h2 id="weak-lens-23pcf-cosmology">Weak lens 2+3PCF cosmology</h2>
-<p><img src="/assets/images/cosmo23pcf.png" alt="cosmology23pcf" class="width-90" /></p>
+    <h2 id="papers">Papers</h2>
+<h3 id="hsc-year-3-cosmic-shear-23pcf-cosmology">HSC Year 3 cosmic shear 2+3PCF cosmology</h3>
+<p><img src="/assets/images/cosmo23pcf.png" alt="cosmology23pcf" />
+In <a href="https://arxiv.org/abs/2508.14019">Sugiyama+2025</a>, we performed a joint cosmological analysis of the cosmic shear two-point and three-point correlation functions using Subaru Hyper Suprime-Cam Year 3 data. This work extends HSC weak-lensing cosmology beyond standard two-point statistics by extracting non-Gaussian information from real survey data. We demonstrated the feasibility of applying three-point cosmic shear statistics to HSC data and provided a practical step toward higher-order weak-lensing analyses for current and future galaxy surveys.</p>
 
-<h3 id="papers">Papers</h3>
+<h3 id="des-year-3-cosmic-shear-23pcf-cosmology">DES Year 3 cosmic shear 2+3PCF cosmology</h3>
+
+<p>In <a href="https://arxiv.org/abs/2508.14018">Gomes, Sugiyama, Jain+2025</a>, we applied a second- and third-order weak-lensing analysis framework to Dark Energy Survey Year 3 data. We measured tomographic higher-order shear information using the third-order aperture mass statistic and combined it with standard two-point cosmic shear statistics. This work showed that higher-order weak-lensing statistics can be applied to current survey data at cosmological-analysis level and can improve constraints on parameters such as \((\Omega_{\rm m} and S_8\).</p>
+
+<h3 id="intrinsic-alignment-modeling-for-higher-order-weak-lensing">Intrinsic-alignment modeling for higher-order weak lensing</h3>
+
+<p>In <a href="https://arxiv.org/abs/2601.09133">Gomes, Miller, Sugiyama+2025</a>, we developed a model for intrinsic-alignment contamination in the cosmic shear three-point correlation function and aperture-mass skewness using the tidal alignment and tidal torquing framework. We connected TATT-based intrinsic-alignment bispectra to practical predictions for higher-order weak-lensing statistics and compared NLA, TATT, and extended TATT models. We showed that intrinsic alignments can significantly affect specific three-point configurations and that joint two- and three-point analyses can help break degeneracies between cosmology and intrinsic-alignment parameters.</p>
+
+<h3 id="methodology-for-des-cosmic-shear-23pcf-cosmology">Methodology for DES cosmic shear 2+3PCF cosmology</h3>
+
+<p>In <a href="https://arxiv.org/abs/2503.03964">Gomes, Sugiyama, Jain+2025</a>, we developed and validated a cosmological inference pipeline for combining second- and third-order cosmic shear statistics. The pipeline includes fast theoretical predictions for three-point shear correlations using <code class="language-plaintext highlighter-rouge">fastnc</code>, integration with the CosmoSIS framework, covariance estimation from simulations, and likelihood validation with mock analyses. This work established the modeling, measurement, and inference framework needed for robust cosmological constraints from higher-order weak-lensing statistics, serving as the foundation for the subsequent DES Year 3 data analysis.</p>
+
+<h3 id="fastnc-fast-modeling-of-the-shear-three-point-correlation-function">fastnc: Fast modeling of the shear three-point correlation function</h3>
+<p>In <a href="https://arxiv.org/abs/2407.01798">Sugiyama, Gomes, Jarvis+2024</a>, we developed a fast and accurate method to compute theoretical predictions for the weak-lensing shear three-point correlation function. The method uses a multipole expansion of the matter bispectrum, avoiding expensive direct numerical integration and making three-point shear modeling practical for cosmological analyses. We showed that the method can compute the shear 3PCF with percent-level accuracy on short timescales, including tomographic source-bin configurations and bin-averaging effects. This work provides the theoretical modeling foundation for applying higher-order weak-lensing statistics to real survey data from HSC, DES, and future galaxy surveys.</p>
+
+<h2 id="related-press-codes">Related press codes</h2>
 <ul>
-  <li><a href="https://arxiv.org/abs/2508.14019">Sugiyama+2025</a> on HSC data</li>
-  <li><a href="https://arxiv.org/abs/2508.14018">Gomes, Sugiyama, Jain+(2025)</a> on DES applications</li>
+  <li><a href="/codes/fastnc">fastnc</a></li>
+  <li><a href="/codes/pmoped">p-MOPED</a></li>
+  <li><a href="/codes/interactive3pcf">interactive3pcf</a></li>
 </ul>
-
 
   </div>
 </div>

@@ -3,6 +3,7 @@ layout: archive
 title: Cisco from CLI
 permalink: /misc/cisco-from-cli
 author_profile: true
+classes: justify-text
 ---
 
 ### Cisco AnyConnect

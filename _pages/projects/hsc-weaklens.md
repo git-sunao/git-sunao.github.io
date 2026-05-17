@@ -4,6 +4,7 @@ permalink: /projects/hsc-weaklens
 layout: archive
 mathjax: true
 author_profile: true
+classes: justify-text
 ---
 
 ## HSC Weak Lensing Cosmology with HSC-Y3 data

@@ -1,0 +1,36 @@
+- title: HSC-Y3 cosmology
+  url: /projects/hsc-weaklens
+  image: /assets/images/hscweaklensy3all.png
+  image_alt: HSC-Y3 weak lensing cosmology
+  description: Cosmological analysis using HSC Year 3 weak lensing data.
+  money_plot: /assets/images/hscweaklensy3all.png
+
+- title: Weak lens 2+3PCF cosmology
+  url: /projects/weaklens-23pcf
+  image: /assets/images/cosmo23pcf.png
+  image_alt: Weak lensing 2+3PCF cosmology
+  description: Cosmological analysis combining two-point and three-point weak-lensing statistics.
+  money_plot: /assets/images/cosmo23pcf.png
+
+- title: HSC-FY cosmology
+  url: /projects/hsc-fy-weaklens
+  image:
+  image_alt:
+  description: HSC Final-Year cosmology is ongoing within the HSC Weak Lensing Working Group.
+  money_plot:
+
+- title: Microlensing
+  url: /projects/microlensing
+  image: /assets/images/microlensing.jpg
+  image_alt: Microlensing
+  description: Searching for compact dark matter using microlensing observations.
+  money_plot: /assets/images/microlensing.jpg
+  paper:
+    title: 
+
+- title: Data Compression
+  url: /projects/data-compression
+  image: /assets/images/pmoped.png
+  image_alt: /assets/images/pmoped.png
+  description: Data compression methods for cosmological inference.
+  money_plot: /assets/images/pmoped.png

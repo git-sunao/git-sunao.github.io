@@ -107,7 +107,7 @@
 
   </head>
 
-  <body class="layout--archive">
+  <body class="layout--archive justify-text">
     <nav class="skip-links">
   <ul>
     <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
@@ -208,6 +208,10 @@
             <li><a href="https://orcid.org/0000-0003-1153-6735" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-orcid" aria-hidden="true"></i><span class="label">ORCID</span></a></li>
           
         
+          
+            <li><a href="https://researchmap.jp/sunaosugiyama" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fas fa-link" aria-hidden="true"></i><span class="label">ResearchMap</span></a></li>
+          
+        
       
 
       
@@ -285,15 +289,33 @@
     
       <h1 id="page-title" class="page__title">Microlensing</h1>
     
-    <p><img src="/assets/images/microlensing.jpg" alt="microlensing" /></p>
-
+    <h2 id="papers">Papers</h2>
 <h3 id="microlensing-observation-for-pbh-search">Microlensing observation for PBH search</h3>
+<p><a href="https://arxiv.org/abs/2602.05840">Sugiyama+2026</a> analyzed the latest data of Subaru Hyper Suprime-Cam (HSC) survey to search for microlensing events caused by primordial black holes (PBHs) in the Milky Way halo. This is an extended analysis of our previous work <a href="https://arxiv.org/abs/1701.02151">Niikura+2019</a> using the 2014 one-night HSC data. We extended our microlensing temlate to include the finite source size effect and the wave optics effect, which are important for constraining small PBHs.</p>
 
-<p>To be updated.</p>
+<h3 id="finite-source-size-effect">Finite-source size effect</h3>
+<p>Finite-source size effect (or extended source effect) is an important effect for microlensing. Modeling this effect requires an convolution of the point-source magnification with the surface brightness profile of the source star. We developed a new method to perform this convolution efficiently, which is described in <a href="https://arxiv.org/abs/2203.06637">Sugiyama2022</a>. This method is based on the idea of the fast Fourier transform (FFT) and can be applied to various surface brightness profiles, including limb-darkened profiles. We also provide a public code for this method, which is available at <a href="https://github.com/git-sunao/fft-extended-source">fastlens</a>.</p>
 
-<p>See also <a href="https://www.ipmu.jp/en/20201224-PBH-multiverse">this press release</a> for vaccum bubble model.</p>
+<h3 id="exploring-primordial-black-holes-from-the-multiverse-with-optical-telescopes">Exploring Primordial Black Holes from the Multiverse with Optical Telescopes</h3>
+<p>In <a href="https://arxiv.org/abs/2001.09160">Kusenko+2020</a>, we studied a multiverse-motivated scenario in which primordial black holes form from false-vacuum bubble nucleation during inflation. This mechanism naturally produces a broad PBH mass spectrum, spanning masses relevant to dark matter, the Subaru/HSC microlensing candidate event, LIGO black holes, and possible seeds of supermassive black holes. We showed that optical microlensing surveys, especially high-cadence observations with Subaru/HSC, can provide a direct observational test of whether this PBH population makes up the dark matter.</p>
 
-<p>See also <a href="https://www.ipmu.jp/en/20190402-PrimordialBlackHole">this press release</a> for PBH observation.</p>
+<h3 id="wave-optics-effect">Wave optics effect</h3>
+<p>In <a href="https://arxiv.org/abs/1905.06066">Sugiyama+2020</a> We studied wave-optics effects in optical microlensing by primordial black holes, focusing on the low-mass regime where the Schwarzschild radius of the lens becomes comparable to the wavelength of observed light. In this regime, the usual geometric-optics approximation is modified, and the microlensing light curve can acquire characteristic interference features. We quantified how these effects change PBH microlensing signals and examined their impact on constraints from Subaru/HSC observations of M31. We found that, for the relevant PBH mass range around \(10^{-11} - 10^{-10}M_\odot\), finite-source-size effects are more important than wave-optics corrections for current M31 microlensing constraints.</p>
+
+<h3 id="niikura2019">Niikura+2019</h3>
+<p><img src="/assets/images/microlensing.jpg" alt="microlensing" />
+In <a href="https://arxiv.org/abs/1701.02151">Niikura+2019</a>, we conducted a search for microlensing events in the Subaru Hyper Suprime-Cam (HSC) survey of the Andromeda galaxy (M31) to constrain the abundance of primordial black holes (PBHs) in the mass range \(10^{-11} - 10^{-6}M_\odot\). We analyzed data from a single night of HSC observations toward M31.</p>
+
+<h2 id="related-press-releases">Related press releases</h2>
+<ul>
+  <li><a href="https://www.ipmu.jp/en/20201224-PBH-multiverse">this press release</a> for vaccum bubble model.</li>
+  <li><a href="https://www.ipmu.jp/en/20190402-PrimordialBlackHole">this press release</a> for PBH observation.</li>
+</ul>
+
+<h2 id="related-press-codes">Related press codes</h2>
+<ul>
+  <li><a href="/codes/fastlens">fastlens</a></li>
+</ul>
 
   </div>
 </div>

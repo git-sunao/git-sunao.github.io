@@ -3,6 +3,7 @@ layout: archive
 title: Misc
 permalink: /misc/
 author_profile: true
+classes: justify-text
 
 header:
   overlay_image: /assets/images/ipmu-inside.jpg

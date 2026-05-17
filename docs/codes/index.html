@@ -109,7 +109,7 @@
 
   </head>
 
-  <body class="layout--archive">
+  <body class="layout--archive justify-text">
     <nav class="skip-links">
   <ul>
     <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
@@ -244,6 +244,10 @@
             <li><a href="https://orcid.org/0000-0003-1153-6735" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-orcid" aria-hidden="true"></i><span class="label">ORCID</span></a></li>
           
         
+          
+            <li><a href="https://researchmap.jp/sunaosugiyama" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fas fa-link" aria-hidden="true"></i><span class="label">ResearchMap</span></a></li>
+          
+        
       
 
       
@@ -319,43 +323,48 @@
 
   <div class="archive">
     
-    <h3 id="fastnc"><a href="https://github.com/git-sunao/fastnc">fastnc</a></h3>
-
-<p><code class="language-plaintext highlighter-rouge">fastnc</code> is a software that compute the cosmic shear three-point correlation function (3PCF). To compute 3PCF from the underlying matter bispectrum, we need to perform a multidimensional Fourier transformation, which is difficult especially because cosmic shear 3PCF include the phase factor that makes integrand oscilates a lot. In <a href="https://arxiv.org/abs/2407.01798">Sugiyama+2024</a>, we developed a novel algorithm that compute the shear 3PCF from bispectrum, using the multipole decomposition of the 3PCF and bispectrum into multipoles. The multipoles in real and Fourier space are related to each other through a 2D Hankel transform, which can be performed quite efficiently using 2D FFTLog. This software implement this idea, and enabled the cosmology inference through a joint analysis of 2+3PCF. See <a href="https://arxiv.org/abs/2508.14018">Sugiyama+2025</a> and <a href="https://arxiv.org/abs/2508.14019">Gomes, Sugiyama+2025</a> for DES and HSC application respectively.</p>
-
-<h3 id="fastlens"><a href="https://github.com/git-sunao/fft-extended-source">fastlens</a></h3>
-
-<p><code class="language-plaintext highlighter-rouge">fastlens</code> is an FFT based evaluation of finite source effect on microlensing. See and cite <a href="https://arxiv.org/abs/2203.06637">Sugiyama</a>.
-This method reduces the two-dimensional integration to one-dimensional fft on logarithmic space, which can be efficiently evaluated.
-The target quantity to be evaluated is</p>
-
-\[A_{\rm ext}(u; \rho) = \int{\rm d}\vec{x} A_{\rm p}(\vec{x})s(\vec{x}+\vec{u};\rho).\]
-
-<p>where \(s(u;\rho)\) is the source flux profile as a function of distance from source center, \(u\).</p>
-
-<p><code class="language-plaintext highlighter-rouge">fastlens</code> is installable from both pip and conda:</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip install fastlens
-</code></pre></div></div>
-<p>or</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>conda install -c ssunao fastlens
-</code></pre></div></div>
-
-<h3 id="interactive-3pcf-visualizer"><a href="https://git-sunao.github.io/interactive3pcf/">Interactive 3PCF Visualizer</a></h3>
-<p>For intuitive understanding, I build a visializer of the 3PCF around a given halo profile.
-The code is developped by ChatGPT.</p>
-
-<h3 id="dark_emulator_public"><a href="https://github.com/DarkQuestCosmology/dark_emulator_public">dark_emulator_public</a></h3>
-
-<p>Dark Emulator is an emulator of cosmological dark matter halo statistics.
-Dark Emulator is a part of the <a href="https://darkquestcosmology.github.io/">dark quest project</a>.
-This is based on <a href="https://arxiv.org/abs/1811.09504">Nishimichi et al</a>.
-This package includes the linear power spectrum (of CAMB) emulator in itself.
-Dark Emulator is installable from both pip and conda:</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip install pip install dark_emulator
-</code></pre></div></div>
-<p>or</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>conda install -c nishimichi dark_emulator
-</code></pre></div></div>
+    <table>
+  <thead>
+    <tr>
+      <th>name</th>
+      <th>website</th>
+      <th>internal page</th>
+      <th>description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>fastnc</td>
+      <td><a href="https://github.com/git-sunao/fastnc">fastnc</a></td>
+      <td><a href="/codes/fastnc">fastnc</a></td>
+      <td>Compute cosmic shear 3PCF quickly</td>
+    </tr>
+    <tr>
+      <td>fastlens</td>
+      <td><a href="https://github.com/git-sunao/fft-extended-source">fastlens</a></td>
+      <td><a href="/codes/fastlens">fastlens</a></td>
+      <td>Compute finite source effect on microlensing</td>
+    </tr>
+    <tr>
+      <td>dark-emulator</td>
+      <td><a href="https://github.com/DarkQuestCosmology/dark_emulator_public">dark_emulator_public</a></td>
+      <td><a href="/codes/dark-emulator">dark-emulator</a></td>
+      <td>Emulator of cosmological dark matter halo statistics</td>
+    </tr>
+    <tr>
+      <td>Interactive 3PCF visualizer</td>
+      <td><a href="https://git-sunao.github.io/interactive3pcf/">Interactive 3PCF Visualizer</a></td>
+      <td><a href="/codes/interactive3pcf">Interactive 3PCF Visualizer</a></td>
+      <td>An interactive webpage to play with 3PCF</td>
+    </tr>
+    <tr>
+      <td>p-MOPED</td>
+      <td><a href="https://github.com/git-sunao/moped">p-MOPED</a></td>
+      <td><a href="/codes/pmoped">p-MOPED</a></td>
+      <td>Data compression for cosmological inference</td>
+    </tr>
+  </tbody>
+</table>
 
   </div>
 </div>

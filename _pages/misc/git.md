@@ -3,6 +3,7 @@ layout: archive
 title: Git
 permalink: /misc/git
 author_profile: true
+classes: justify-text
 ---
 
 ## Introduction

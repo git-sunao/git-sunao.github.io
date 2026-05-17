@@ -3,6 +3,7 @@ layout: archive
 title: Jupyter on remote system
 permalink: /misc/jupyter-on-remote-system
 author_profile: true
+classes: justify-text
 ---
 
 ### Configureration of ssh on local

@@ -4,6 +4,7 @@ title: Links
 permalink: /links/
 author_profile: true
 mathjax: true
+classes: justify-text
 
 header:
   overlay_image: /assets/images/rainbow-bridge.jpg

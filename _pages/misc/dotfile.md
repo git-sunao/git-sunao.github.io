@@ -3,6 +3,7 @@ layout: archive
 title: Dotfile
 permalink: /misc/dotfile
 author_profile: true
+classes: justify-text
 ---
 
 Dotfile is a configuration file in Unix-based systems that is typically hidden because it has a dot (".") prefix in its filename.
