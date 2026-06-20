@@ -27,6 +27,8 @@ My CV is available in [English](https://github.com/git-sunao/cv/blob/main/en/sun
 
 <div class="notice--info updates-box" markdown="1">
 
+- **2026-06-20** - Updated CV; added a seminar talk at KEK
+
 - **2026-06-19** - Added Google Search Console
 
 - **2026-05-18** — Reorganized homepage: projects and codes.
